@@ -15,7 +15,7 @@
 
 terraform {
   backend "gcs" {
-    bucket = "PROJECT_ID-tfstate"
+    bucket = "holden-andrew-tf-jen-k8s-tfstate"
     prefix = "env/prod"
   }
 }

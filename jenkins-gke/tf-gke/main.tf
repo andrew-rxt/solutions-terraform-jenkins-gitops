@@ -119,9 +119,9 @@ module "workload_identity" {
   project_id          = module.enables-google-apis.project_id
   name                = "jenkins-wi-${module.jenkins-gke.name}"
   namespace           = "default"
-  use_existing_k8s_sa = true
-  k8s_sa_name = "k8s-workload-identity"
-  annotate_k8s_sa = false
+  use_existing_k8s_sa = false
+#   k8s_sa_name = "k8s-workload-identity"
+#   annotate_k8s_sa = false
 }
 
 # enable GSA to add and delete pods for jenkins builders

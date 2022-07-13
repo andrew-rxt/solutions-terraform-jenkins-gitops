@@ -121,6 +121,7 @@ module "workload_identity" {
   namespace           = "default"
   use_existing_k8s_sa = true
   k8s_sa_name = "k8s-workload-identity"
+  annotate_k8s_sa = false
 }
 
 # enable GSA to add and delete pods for jenkins builders
